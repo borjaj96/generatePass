@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 48 JS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <main class="layout__main">
+            <h1 class="main__tittle">Generar contraseña</h1>
+
+            <div class="main__generate">
+                <p class="generate__mail"></p>
+                <i class="fa-solid fa-copy generate__icon"></i>
+            </div>
+
+            <form class="main__form">
+                <div class="form__slider">
+                    <div class="control__title">
+                        <span class="control__text">Longitud</span>
+                        <span class="control__number">5</span>
+                    </div>
+
+                    <input type="range" class="control__range" value="5" min="5" max="15">
+                </div>
+
+                <div class="form__control">
+                    <input type="checkbox" class="control__checkbox" name="letters" id="minus">
+                    <label for="letters" class="control__label">Con letras en minúscula</label>
+                </div>
+
+                <div class="form__control">
+                    <input type="checkbox" class="control__checkbox" name="mayus" id="mayus">
+                    <label for="mayus" class="control__label">Con letras en mayúsculas</label>
+                </div>
+
+                <div class="form__control">
+                    <input type="checkbox" class="control__checkbox" name="numbers" id="numbers">
+                    <label for="numbers" class="control__label">Con números</label>
+                </div>
+
+                <div class="form__control">
+                    <input type="checkbox" class="control__checkbox" name="symbols" id="symbols">
+                    <label for="symbols" class="control__label">Con símbolos</label>
+                </div>
+
+
+
+                <input type="submit" class="form__submit" value="crear">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
